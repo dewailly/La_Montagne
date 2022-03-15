@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'font1', sans-serif;
+    src: url(../fonts/Merriweather-Light.ttf);
+}
+
+@font-face {
+    font-family: 'font-2', sans-serif;
+    src: url(../fonts/Inter-ExtraBold.ttf);
+}
+
+$color1: whitesmoke;
+$color2: #303030;
+$color3: rgb(65, 65, 65);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'font1', sans-serif;
+    background: url(../images/bg.jpg) center/cover fixed;
+
+    h1, h2, h3 {   
+        font-family: 'font2', sans-serif;
+    }
+
+    li {
+        list-style-type: none;
+    }
+    
+    label {
+        color: $color3;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 800;
+        font-size: .7rem;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        border: 1px solid $color3;
+        background: transparent;
+        border-radius: 3px;
+        padding: 5px 0;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    textarea {
+        resize: none;
+        height: 200px;
+    }
+
+    input[type="submit"] {
+        text-transform: uppercase;
+        border: 2px solid $color2;
+        letter-spacing: 1px;
+        padding: 10px 30px;
+        background: transparent;
+        font-weight: 700;
+        max-width: 250px;
+    }
+
+    .button {
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding: 10px 30px;
+        border: 2px solid $color2;
+        background: transparent;
+        font-size: .9rem;
+        cursor: pointer;
+    }
+}
